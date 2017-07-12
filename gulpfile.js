@@ -16,18 +16,22 @@ gulp.task('compileSass',()=>{
 		// 编译
 		.pipe(sass({
 			outputStyle:'expanded'//compact,expanded,compressed
-		}).on('error', sass.logError))
+		})
 
 		// 输出
-		.pipe(gulp.dest('./src/css/'))
+		.pipe(gulp.dest('./src/css/'));
 });
 
-
+var browserSync = require('browser-sync');
 // 监听文件修改并自动编译
 // *：表示文件名
 // **：表示目录
-gulp.task('jtSass',()=>{
-	gulp.watch('./src/**/*.scss',['compileSass']);
+gulp.task('ser',()=>{
+	browserSync({
+		server:'./src/',
+
+		files:['./src/**/*html','./src/css/*.css','./src/js/*.js']
+	});
 });
 
 
@@ -36,17 +40,20 @@ gulp.task('jtSass',()=>{
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
-gulp.task('compressJs',()=>{
+gulp.task('buildJs',()=>{
 	// 查找js
 	gulp.src('./src/js/*.js')
 		// 合并文件
-		.pipe(concat({ path: 'all.js',newLine: ';'}))
+		.pipe(concat('all.js'))
 
 		// 输出合并文件
-		.pipe(gulp.dest('./dist/js/'))
+		.pipe(concat('all.js'))
+
+		//输出
+		。pipe(gulp.dest('./dist/js'))
 
 		// 压缩
-		.pipe(uglify())
+		.pipe(uglify({mangle:false}))
 
 		// 重命名
 		.pipe(rename({

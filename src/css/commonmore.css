@@ -1,0 +1,623 @@
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  height: 25px;
+  background-color: #eee;
+  border-bottom: 1px solid #e5e5e5; }
+  header .container ul {
+    float: right; }
+    header .container ul li {
+      float: left;
+      height: 16px;
+      line-height: 16px;
+      margin-top: 4px;
+      border-right: 1px solid #d4d4d4;
+      padding: 0 16px 0 15px;
+      position: relative; }
+      header .container ul li a {
+        color: #656565;
+        font-size: 12px; }
+      header .container ul li a:hover {
+        color: #f60;
+        text-decoration: underline; }
+      header .container ul li .a1 {
+        padding-right: 13px; }
+      header .container ul li .arror {
+        display: block;
+        width: 9px;
+        height: 5px;
+        background: url("../images/sprites.fw.png");
+        position: absolute;
+        right: 10px;
+        top: 6px; }
+      header .container ul li .phone {
+        display: block;
+        width: 12px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 1px;
+        background: url("../images/sprites.fw.png") -30px 0; }
+      header .container ul li .qq {
+        display: block;
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        left: 14px;
+        top: 0;
+        background: url("../images/sprites.fw.png") -70px 0; }
+      header .container ul li .tele {
+        display: block;
+        width: 18px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 14px;
+        background: url("../images/sprites.fw.png") -110px 0; }
+    header .container ul .tu_r {
+      padding-right: 26px; }
+    header .container ul .tu_l {
+      padding-left: 35px; }
+    header .container ul .one a {
+      color: #fe6603; }
+    header .container ul .last a {
+      color: #b60c15;
+      font-size: 14px;
+      font-weight: bold; }
+
+#header_nav {
+  width: 100%;
+  height: 34px;
+  background-color: #A21F25;
+  line-height: 34px;
+  text-align: center;
+  font-size: 14px; }
+  #header_nav .container .nav1 {
+    float: left;
+    width: 190px;
+    position: relative; }
+    #header_nav .container .nav1 p {
+      float: left;
+      width: 189px;
+      border-right: 1px solid #A21F27;
+      background-color: #B9363C;
+      color: white;
+      font-weight: bold; }
+    #header_nav .container .nav1 ul {
+      display: none;
+      float: left;
+      position: absolute;
+      left: 0;
+      top: 34px;
+      width: 190px;
+      height: 385px;
+      background-color: #1F1909;
+      color: white;
+      z-index: 200; }
+      #header_nav .container .nav1 ul li:hover .menu {
+        display: block; }
+      #header_nav .container .nav1 ul li {
+        height: 12px;
+        line-height: 12px;
+        text-align: left;
+        width: 149px;
+        padding: 17px 0 13px 41px;
+        position: relative; }
+        #header_nav .container .nav1 ul li .menu {
+          display: none;
+          position: absolute;
+          width: 280px;
+          padding: 20px;
+          height: 345px;
+          top: 0;
+          left: 190px;
+          background-color: #fbfbfb;
+          opacity: 0.9; }
+          #header_nav .container .nav1 ul li .menu dl {
+            line-height: 2; }
+            #header_nav .container .nav1 ul li .menu dl dt {
+              border-bottom: 1px solid #000;
+              padding-top: 10px;
+              position: relative; }
+              #header_nav .container .nav1 ul li .menu dl dt .more {
+                position: absolute;
+                right: 10px; }
+            #header_nav .container .nav1 ul li .menu dl dd a {
+              color: #d06; }
+            #header_nav .container .nav1 ul li .menu dl dd a:hover {
+              text-decoration: under-line;
+              color: blue; }
+        #header_nav .container .nav1 ul li span {
+          width: 22px;
+          position: absolute;
+          left: 11px;
+          top: 50%;
+          margin-top: -5px; }
+        #header_nav .container .nav1 ul li .shoes {
+          height: 12px;
+          background: url("../images/nav.fw.png"); }
+        #header_nav .container .nav1 ul li .clothes {
+          height: 19px;
+          background: url("../images/nav.fw.png") -30px 0; }
+        #header_nav .container .nav1 ul li .run {
+          height: 27px;
+          background: url("../images/nav.fw.png") -60px 0; }
+        #header_nav .container .nav1 ul li .basketball {
+          height: 18px;
+          background: url("../images/nav.fw.png") -90px 0; }
+        #header_nav .container .nav1 ul li .football {
+          height: 18px;
+          background: url("../images/nav.fw.png") -120px 0; }
+        #header_nav .container .nav1 ul li .bag {
+          height: 20px;
+          background: url("../images/nav.fw.png") -150px 0; }
+        #header_nav .container .nav1 ul li .outdoor {
+          height: 14px;
+          background: url("../images/nav.fw.png") -180px 0; }
+        #header_nav .container .nav1 ul li .shoes2 {
+          height: 18px;
+          background: url("../images/nav.fw.png") -210px 0; }
+        #header_nav .container .nav1 ul li .shoes3 {
+          height: 14px;
+          background: url("../images/nav.fw.png") -240px 0; }
+  #header_nav .container .nav1:hover ul {
+    display: block; }
+  #header_nav .container .nav_l {
+    float: left;
+    height: 34px; }
+    #header_nav .container .nav_l li {
+      position: relative; }
+      #header_nav .container .nav_l li a:hover {
+        background-color: #444444;
+        margin-left: -1px;
+        padding-left: 1px; }
+        #header_nav .container .nav_l li a:hover span {
+          border-right-color: #444444; }
+      #header_nav .container .nav_l li .hide {
+        display: none;
+        width: 688px;
+        padding: 8px 0 13px;
+        position: absolute;
+        left: 0;
+        top: 34px;
+        background: white;
+        z-index: 200; }
+        #header_nav .container .nav_l li .hide a {
+          color: #ccc;
+          font-size: 12px; }
+        #header_nav .container .nav_l li .hide a:hover {
+          color: #f60;
+          background-color: #fff; }
+        #header_nav .container .nav_l li .hide ul {
+          width: 140px;
+          padding-left: 22px;
+          float: left; }
+          #header_nav .container .nav_l li .hide ul li {
+            float: none; }
+        #header_nav .container .nav_l li .hide .hider {
+          width: 255px; }
+          #header_nav .container .nav_l li .hide .hider li a {
+            display: inline-block;
+            width: 69px;
+            height: 35px;
+            border: 1px solid #fff;
+            padding: 0;
+            margin: 5px;
+            float: left; }
+          #header_nav .container .nav_l li .hide .hider li a:hover {
+            border-color: #cc0; }
+    #header_nav .container .nav_l li:hover .hide {
+      display: block; }
+    #header_nav .container .nav_l li:last-child span {
+      display: block;
+      width: 165px;
+      height: 34px;
+      line-height: 34px;
+      position: relative;
+      background: url("img/wx.gif") no-repeat 0 0; }
+      #header_nav .container .nav_l li:last-child span img {
+        position: absolute;
+        left: 0;
+        top: 34px;
+        display: none; }
+    #header_nav .container .nav_l li:last-child:hover img {
+      display: block; }
+  #header_nav .container .nav_r {
+    float: right;
+    height: 34px; }
+    #header_nav .container .nav_r a span {
+      border-left: none;
+      border-right: 1px solid #D09091; }
+    #header_nav .container .nav_r li a:hover {
+      color: #FFCB01; }
+    #header_nav .container .nav_r li .youhui {
+      display: block;
+      width: 33px;
+      height: 18px;
+      background: url("../images/youhui.jpg");
+      position: absolute;
+      top: -8px;
+      right: -4px;
+      /*z-index:1000;*/ }
+  #header_nav .container a span {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 13px;
+    padding-right: 16px;
+    border-right: 1px solid #D6A19B; }
+  #header_nav .container a .one {
+    padding-right: 18px;
+    padding-left: 21px; }
+  #header_nav .container a .last {
+    border: none; }
+  #header_nav .container > ul li {
+    float: left;
+    height: 34px;
+    position: relative; }
+    #header_nav .container > ul li a {
+      display: block;
+      height: 14px;
+      color: white;
+      padding: 10px 0; }
+
+#header_main {
+  width: 100%;
+  height: 77px; }
+  #header_main a.logo {
+    display: inline-block;
+    float: left; }
+    #header_main a.logo h1 {
+      width: 425px;
+      height: 77px;
+      text-indent: -1000px;
+      background: url("../images/sprites.fw.png") 0 -35px; }
+  #header_main .search {
+    float: left;
+    margin-left: 115px;
+    height: 77px; }
+    #header_main .search form {
+      margin-top: 16px; }
+    #header_main .search .text1 {
+      width: 265px;
+      height: 26px;
+      float: left;
+      border: 2px solid #ccc;
+      border-right: 0;
+      padding-left: 7px;
+      color: #656565; }
+    #header_main .search .button1 {
+      width: 65px;
+      height: 30px;
+      float: left;
+      background-color: #444444;
+      border: 0;
+      color: #FCF7D1; }
+    #header_main .search p {
+      float: left;
+      font-size: 12px;
+      color: #868686;
+      line-height: 30px; }
+      #header_main .search p span {
+        color: #CBCBCB; }
+  #header_main .shoppingcar {
+    float: right;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #FCFCFC;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    padding-left: 45px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
+    position: relative; }
+    #header_main .shoppingcar .shoppingcar_img {
+      display: block;
+      width: 23px;
+      height: 20px;
+      background: url("../images/sprites.fw.png") -155px 0;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -10px; }
+    #header_main .shoppingcar span {
+      color: #CB0155; }
+    #header_main .shoppingcar .carList {
+      position: absolute;
+      visibility: hidden;
+      right: 0;
+      top: 100%;
+      background: #fff;
+      border: 3px solid #f4a318;
+      padding: 10px;
+      z-index: 200; }
+      #header_main .shoppingcar .carList li {
+        width: 280px;
+        height: 80px;
+        font-size: 12px;
+        line-height: 1;
+        margin-bottom: 10px;
+        border-bottom: 1px #ccc dotted;
+        padding-bottom: 10px; }
+        #header_main .shoppingcar .carList li img {
+          width: 50px;
+          height: 50px;
+          padding: 15px 0;
+          float: left; }
+        #header_main .shoppingcar .carList li a {
+          display: inline-block;
+          padding-top: 15px;
+          padding-left: 10px;
+          width: 110px;
+          height: 65px;
+          float: left; }
+        #header_main .shoppingcar .carList li a:hover {
+          text-decoration: underline;
+          color: #f60; }
+        #header_main .shoppingcar .carList li p {
+          display: inline-block;
+          height: 80px;
+          float: left; }
+        #header_main .shoppingcar .carList li .car-qty {
+          width: 37px;
+          line-height: 80px;
+          text-align: center; }
+        #header_main .shoppingcar .carList li .car-price {
+          padding-top: 20px;
+          line-height: 2;
+          width: 58px;
+          margin: auto 0;
+          text-align: center; }
+          #header_main .shoppingcar .carList li .car-price b {
+            font-size: 14px;
+            color: #f60;
+            display: inline-block;
+            width: 100%; }
+          #header_main .shoppingcar .carList li .car-price .btn-close {
+            cursor: pointer; }
+      #header_main .shoppingcar .carList button {
+        background: red;
+        border-radius: 3px;
+        color: white; }
+
+.footbrand {
+  width: 1000px;
+  background: #fff;
+  overflow: hidden;
+  padding-bottom: 1px;
+  margin: 0 auto;
+  height: 142px; }
+  .footbrand a {
+    border: 1px solid #DFDFDF;
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    position: relative;
+    text-indent: -999px;
+    width: 98px;
+    background: url("img/footbrand.png") no-repeat 21px -176px; }
+  .footbrand a:nth-child(2) {
+    background-position: -106px -176px; }
+  .footbrand a:nth-child(3) {
+    background-position: -715px -333px; }
+  .footbrand a:nth-child(4) {
+    background-position: -838px -333px; }
+  .footbrand a:nth-child(5) {
+    background-position: -590px -176px; }
+  .footbrand a:nth-child(6) {
+    background-position: -596px -10px; }
+  .footbrand a:nth-child(7) {
+    background-position: -347px -176px; }
+  .footbrand a:nth-child(8) {
+    background-position: -835px -176px; }
+  .footbrand a:nth-child(9) {
+    background-position: -719px -10px; }
+  .footbrand a:nth-child(10) {
+    background-position: -476px -331px; }
+  .footbrand a:nth-child(11) {
+    background-position: -719px -10px; }
+  .footbrand a:nth-child(12) {
+    background-position: -718px -486px; }
+  .footbrand a:nth-child(13) {
+    background-position: -347px -176px; }
+  .footbrand a:nth-child(14) {
+    background-position: -230px -176px; }
+  .footbrand a:nth-child(15) {
+    background-position: -229px -491px; }
+  .footbrand a:nth-child(16) {
+    background-position: -829px -411px; }
+  .footbrand a:nth-child(17) {
+    background-position: -719px -10px; }
+  .footbrand a:nth-child(18) {
+    background-position: -595px -491px; }
+  .footbrand a:nth-child(19) {
+    background-position: -230px -176px; }
+  .footbrand a:nth-child(20) {
+    background-position: 32px -490px; }
+
+.foottitle {
+  height: 36px;
+  width: 990px;
+  margin: 0 auto 28px;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .foottitle h3 {
+    font-size: 18px;
+    font-family: microsoft yahei;
+    position: absolute;
+    left: 50%;
+    margin: 12px 0 0 -60px;
+    background: #fff;
+    padding: 10px 20px;
+    font-weight: 100; }
+
+.footbody {
+  width: 990px;
+  margin: 0 auto 15px;
+  font-family: microsoft yahei;
+  overflow: hidden; }
+  .footbody dl {
+    width: 245px;
+    float: left;
+    padding-right: 2px; }
+    .footbody dl dt b {
+      text-align: center;
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      text-decoration: none; }
+    .footbody dl dt img {
+      width: 80px;
+      height: 80px;
+      margin: 0 82px; }
+    .footbody dl dd {
+      border-right: 1px dotted #ccc;
+      height: 85px;
+      overflow: hidden;
+      padding: 0 10px 0 15px; }
+      .footbody dl dd a {
+        color: #555;
+        display: block;
+        float: left;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        width: 54px;
+        font-size: 12px;
+        text-decoration: none; }
+
+.footlog {
+  margin: 0 auto;
+  width: 990px; }
+
+footer {
+  height: 226px;
+  background-color: #F5F5F5;
+  border-top: 2px solid #CD3B3B;
+  padding: 15px 0 16px 0; }
+  footer .container {
+    height: 226px; }
+    footer .container .fl {
+      width: 230px;
+      height: 195px;
+      padding-left: 31px;
+      float: left; }
+      footer .container .fl div {
+        width: 229px;
+        height: 195px;
+        border-right: 1px solid #DEDEDE;
+        position: relative; }
+        footer .container .fl div .p1 {
+          height: 18px;
+          line-height: 18px;
+          padding-left: 28px;
+          color: #9A9A9A;
+          font-weight: bold;
+          position: relative; }
+          footer .container .fl div .p1 .s1 {
+            display: block;
+            width: 23px;
+            height: 15px;
+            background: url("../images/footer_p1.jpg");
+            position: absolute;
+            left: 0;
+            top: 0; }
+          footer .container .fl div .p1 .s2 {
+            color: #B1B1B1; }
+        footer .container .fl div .p2 {
+          color: #C00F23;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 24px; }
+        footer .container .fl div .p3 {
+          margin-top: 4px;
+          font-size: 14px;
+          line-height: 18px;
+          color: #9B9B9B; }
+        footer .container .fl div .erweima {
+          display: block;
+          width: 175px;
+          height: 96px;
+          background: url("../images/erweima.jpg");
+          position: absolute;
+          right: 54px;
+          bottom: 9px; }
+    footer .container .fr {
+      width: 929px;
+      height: 195px;
+      float: right; }
+      footer .container .fr .fr1 {
+        float: left;
+        height: 195px;
+        width: 180px;
+        padding-left: 50px; }
+        footer .container .fr .fr1 .fr11 {
+          height: 36px;
+          margin-bottom: 22px;
+          padding-left: 40px;
+          position: relative; }
+          footer .container .fr .fr1 .fr11 .s1 {
+            display: block;
+            width: 40px;
+            height: 36px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+          footer .container .fr .fr1 .fr11 .s11 {
+            background: url("../images/nav.fw.png") -280px 0; }
+          footer .container .fr .fr1 .fr11 .s12 {
+            background: url("../images/nav.fw.png") -330px 0; }
+          footer .container .fr .fr1 .fr11 .s13 {
+            background: url("../images/nav.fw.png") -380px 0; }
+          footer .container .fr .fr1 .fr11 .s14 {
+            background: url("../images/nav.fw.png") -430px 0; }
+          footer .container .fr .fr1 .fr11 .s2 {
+            font-size: 18px;
+            line-height: 18px;
+            color: #AAAAAA; }
+          footer .container .fr .fr1 .fr11 .s3 {
+            font-size: 12px;
+            line-height: 18px;
+            color: #B8B8B8; }
+        footer .container .fr .fr1 dl dt {
+          font-size: 18px;
+          margin-top: 18px;
+          line-height: 50px; }
+        footer .container .fr .fr1 dl dd {
+          font-size: 12px;
+          line-height: 18px;
+          color: #9C9C9C; }
+
+.links {
+  text-align: center;
+  padding: 20px 0; }
+  .links a:hover {
+    text-decoration: underline;
+    color: #f60; }
+  .links b {
+    color: #f60;
+    font-size: 20px; }
+  .links .last {
+    width: 640px;
+    height: 50px;
+    margin: 20px auto 10px; }
+    .links .last a {
+      display: block;
+      float: left;
+      width: 112px;
+      height: 47px;
+      margin-right: 10px;
+      border: 1px solid #fff; }
+      .links .last a img {
+        width: 100%;
+        height: 100%; }
+    .links .last a:hover {
+      border: 1px solid #ccc; }
