@@ -175,7 +175,7 @@
 				};
 
 
-				// 购物车数量、总价计算
+				// 封装 购物车数量、总价计算
 				function showRes(){
 					var $carQty = $carList.find('.car-qty');
 					var $carPrice = $carList.find('.car-price b');
@@ -190,7 +190,7 @@
 					// console.log(resTotal);
 				};
 
-				// cookie
+				// 封装 改变cookie
 				function cookieChange(){
 
 					// 商品存在于cookie中
@@ -239,7 +239,7 @@
 
 		});
 
-		// 从数据库获取商品id信息写入页面
+		// 封装 生成商品信息 （从数据库获取商品id信息写入页面）
 		function showHtml(item){
 			
 			var html = `

@@ -98,9 +98,13 @@
 		})
 
 
-		// 显示总数、总价
+		// 封装 显示总数、总价
 		function showRes(){
+
+			//总数
 			var $qtyAll = $('.qtyAll');
+
+			//总价
 			var $totalAll = $('.totalAll');
 
 			var resQtyAll = 0;
@@ -116,7 +120,7 @@
 			$totalAll.text(resTotalAll);
 		}
 
-		// cookie改变
+		// 封装 改变cookie
 		function cookieChange(){
 			
 			var $currentTr = $(this).closest('tr');
