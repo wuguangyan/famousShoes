@@ -4,7 +4,7 @@
 		// 通过cookie获取购物车商品信息
 		var cookieGoodsList = getCookie('cookieGoodsList');
 		cookieGoodsList = cookieGoodsList ? JSON.parse(cookieGoodsList) : [];
-		console.log(cookieGoodsList);
+		// console.log(cookieGoodsList);
 
 		var $main = $('main');
 
@@ -13,6 +13,7 @@
 
 		function showCarList(){
 			var res = cookieGoodsList.map(function(item){
+
 				return  `
 					<tr>
 						<td><img src="${item.url}" data-guid="${item.guid}"></td>
@@ -41,6 +42,7 @@
 
 		// 点击按钮加减数量
 		$qty.on('click','.minus',function(){
+			// console.log(this);
 			var res = $(this).siblings('input').val();
 			res--;
 
@@ -56,6 +58,7 @@
 			var cc = cookieChange.bind(this);
 			cc();
 		}).on('click','.plus',function(){
+			// console.log(this);
 			var res = $(this).siblings('input').val();
 			res++;
 			if(res>=10){
